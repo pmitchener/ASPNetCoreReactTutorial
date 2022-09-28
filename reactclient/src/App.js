@@ -1,5 +1,4 @@
-import { Collapse } from "bootstrap";
-import React, { isValidElement, useState } from "react";
+import React, { useState } from "react";
 import Constants from "./utilities/Constants";
 import PostCreateForm from "./components/PostCreatForm";
 import PostUpdateForm from "./components/PostUpdateForm";
