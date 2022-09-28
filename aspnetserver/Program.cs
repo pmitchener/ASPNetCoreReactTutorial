@@ -10,7 +10,7 @@ builder.Services.AddCors(options =>
         policy =>
         {
             policy
-            .WithOrigins("http://localhost:3000", "https://appname.azurestaticapps.net")
+            .WithOrigins("http://localhost:3000", "https://lively-island-055d66e10.2.azurestaticapps.net")
             .AllowAnyMethod()
             .AllowAnyHeader();     
         });
