@@ -1,0 +1,36 @@
+before deploying to azure, right-click the Data\App.db sqlite file and hit properties. set the "Copy to Output Directory" property to Copy Always.
+Do the same to the AppDB.db-shm and AppDB.db-wal files.
+***Change back to do not copy after publish.*** This will prevent your production db from being overwritten by development.
+
+to publish to azure
+right-click the aspnetserver project and select publish
+select Azure
+select Azure App Service (Wndows)
+
+my hosting pland name: pmit-ASP-ARTutorial-aspnetserver
+
+on the hosting plan dialog choose size:free so that you don't get charged.
+click create.
+when done. click next and then skip the api management. this is for larger applications.
+click finish.
+
+include the .net runtime with the projects. not sure if you have to do this but this tutorial says this reduces bugs.
+to do this. click the little pencil on deployment mode. change deployment mode to self-contained.
+click publish at top right of screen.
+
+copy the site url from the bottom of the publish screen.
+can always righ-click the project and click publish to get back to this screen.
+
+go to react app. and past the url to the production url.
+
+open your Azure protal in browser
+click to plus sign to create resource
+search for Static Web App. this is used for front-end techs like react, angular, vue, blazor etc.
+select 'Static Web App' and click on create
+
+..to push projects to git. 
+in visual studio click the view menu and chose Git Changes
+select Create Git Repository
+The local path will usually default to the solution foldder. this is usually correct.
+login to git hub by selecting account form the account dropbox.
+uncheck the private repository check box and click create and push.
