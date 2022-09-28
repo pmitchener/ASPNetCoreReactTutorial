@@ -27,6 +27,7 @@ open your Azure protal in browser
 click to plus sign to create resource
 search for Static Web App. this is used for front-end techs like react, angular, vue, blazor etc.
 select 'Static Web App' and click on create
+**use github as Deployment details source
 
 ..to push projects to git. 
 in visual studio click the view menu and chose Git Changes
